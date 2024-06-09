@@ -1,0 +1,7 @@
+cloud:
+  aws:
+    region:
+      static: eu-north-1
+      auto: false
+    end-point:
+      uri: https://random/Transaction-queue

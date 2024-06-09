@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.example.Spring.Project;
+
+option java_package = "com.example.Spring.protos";
+option java_multiple_files=true;
+
+message PaginationRequestDto {
+  int64 id_number = 1;
+  int64  range = 2;
+}
+
+message MetalDetailsRequestDto {
+  string element = 1;
+}

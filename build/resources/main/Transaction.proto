@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.example.Spring.Project;
+
+option java_package = "com.example.Spring.protos";
+option java_multiple_files=true;
+
+message Transaction {
+  string element  =1;
+  string mode = 2;
+  string status = 3;
+  double  quantity = 4;
+
+}
+message TransactionList {
+  repeated Transaction transaction =1;
+}

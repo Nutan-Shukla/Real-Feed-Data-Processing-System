@@ -1,0 +1,44 @@
+CREATE TABLE Metal (
+  id int NOT NULL AUTO_INCREMENT,
+  date varchar(20) NOT NULL,
+  weightunit varchar(5) NOT NULL,
+  ask double NOT NULL,
+  mid double NOT NULL,
+  bid double NOT NULL,
+  value double NOT NULL,
+  performance double NOT NULL,
+  element varchar(5) NOT NULL,
+  create_ts TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6),
+  updated_ts TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  PRIMARY KEY (Id)
+);
+
+CREATE TABLE User {
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(20) NOT NULL,
+  balance double NOT NULL,
+  goldquantity double NOT NULL,
+  password varchar(500) NOT NULL,
+  role varchar(10) NOT NULL,
+  silverQuantity double NOT NULL,
+  palladiumquantity double NOT NULL,
+  platinumquantity double NOT NULL,
+  deleted BOOLEAN DEFAULT FALSE, 
+  create_ts TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6),
+  updated_ts TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  PRIMARY KEY (Id)
+};
+
+CREATE TABLE Transaction {
+  id varchar(100) NOT NULL,
+  name varchar(20) NOT NULL,
+  mode varchar(5) NOT NULL,
+  element varchar(15) NOT NULL,
+  date datetime NOT NULL,
+  status varchar(10) NOT NULL,
+  quantity double NOT NULL,
+  value double NOT NULL,
+  create_ts TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6),
+  updated_ts TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  Primary Key (Id)
+};

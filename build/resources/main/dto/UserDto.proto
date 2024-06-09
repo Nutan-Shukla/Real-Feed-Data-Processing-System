@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package com.example.Spring.Project;
+
+option java_package = "com.example.Spring.protos";
+option java_multiple_files=true;
+
+message UserAddRequestDto {
+  string name = 1;
+  string password = 2;
+  string email = 3;
+}
+
+message UserAddReponseDto {
+  string  msg =1;
+}
+
+message UserUpdateRequestDto {
+  string updated_name = 1;
+  string updated_password =2;
+}
+
+message UserUpdateResponseDto {
+  string  msg = 1;
+}
+
+message UserDeleteResponseDto {
+  string  msg = 1;
+}
+
+message PersonalDetailsRequestDto {
+  int32 user_id =1;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package com.example.Spring.Project;
+
+option java_package = "com.example.Spring.protos";
+option java_multiple_files=true;
+//option java_outer_classname="MyPerson";
+
+message MetalPrice {
+  int64  id =1;
+  string date=2;
+  string weight_unit=3;
+  double ask=4;
+  double mid=5;
+  double bid=6;
+  double value=7;
+  double performance=8;
+  string element = 9;
+
+
+}
+
+message MetalPriceList {
+  repeated MetalPrice metalprice =1;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package com.example.Spring.Project;
+
+option java_package = "com.example.Spring.protos";
+option java_multiple_files=true;
+
+message User {
+  int64 id =1;
+  string name=2;
+  double balance=3;
+  double gold_quantity=4;
+  string password = 5;
+  string  role = 6;
+  double silver_quantity=7;
+  double palladium_quantity=8;
+  double platinum_quantity=9;
+  string email = 10;
+}
+
+message UserList {
+  repeated User user =1;
+}

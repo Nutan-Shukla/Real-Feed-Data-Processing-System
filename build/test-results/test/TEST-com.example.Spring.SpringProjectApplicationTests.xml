@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.Spring.SpringProjectApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-21T19:49:14" hostname="Apples-MacBook-Pro.local" time="0.093">
+  <properties/>
+  <testcase name="LastestDataTest()" classname="com.example.Spring.SpringProjectApplicationTests" time="0.093"/>
+  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+01:19:11.323 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.Spring.SpringProjectApplicationTests]: SpringProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:19:11.416 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.Spring.SpringProjectApplication for test class com.example.Spring.SpringProjectApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-02-22T01:19:11.737+05:30  INFO 7303 --- [    Test worker] c.e.S.SpringProjectApplicationTests      : Starting SpringProjectApplicationTests using Java 18.0.2 with PID 7303 (started by apple in /Users/apple/Desktop/interns-2024/Nutan/Spring-Project)
+2024-02-22T01:19:11.738+05:30  INFO 7303 --- [    Test worker] c.e.S.SpringProjectApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-02-22T01:19:13.492+05:30  INFO 7303 --- [    Test worker] o.s.s.p.JdbcUserDetailsManager           : No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+2024-02-22T01:19:13.754+05:30  INFO 7303 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27261190, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@543b0737, org.springframework.security.web.context.SecurityContextHolderFilter@67fac095, org.springframework.security.web.header.HeaderWriterFilter@631bc9f4, org.springframework.web.filter.CorsFilter@6e46891d, org.springframework.security.web.authentication.logout.LogoutFilter@194b9783, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ed65e4b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@60816371, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@48632f69, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f4f843f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dae5a70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7686f701, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fde1d64, org.springframework.security.web.access.ExceptionTranslationFilter@1a0d313, org.springframework.security.web.access.intercept.AuthorizationFilter@1752e45c]
+2024-02-22T01:19:14.074+05:30  INFO 7303 --- [    Test worker] c.e.S.SpringProjectApplicationTests      : Started SpringProjectApplicationTests in 2.536 seconds (process running for 3.474)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

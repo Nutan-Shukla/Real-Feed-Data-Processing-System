@@ -1,0 +1,46 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.1'
+	id 'io.spring.dependency-management' version '1.1.4'
+	id "com.google.protobuf" version "0.9.4"
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.14.2'
+	implementation 'com.fasterxml.jackson.core:jackson-core'
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
+	implementation 'com.google.protobuf:protobuf-java:3.25.0'
+	implementation "com.google.protobuf:protobuf-java-util:3.24.3"
+
+
+	implementation 'com.amazonaws:aws-java-sdk-rds:1.12.637'
+	implementation 'com.amazonaws:aws-java-sdk-sqs:1.12.637'
+	implementation 'org.springframework.cloud:spring-cloud-aws-messaging:2.2.6.RELEASE'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+
+
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

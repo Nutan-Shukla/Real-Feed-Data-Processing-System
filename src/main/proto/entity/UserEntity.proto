@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package com.example.Spring.Project;
+
+option java_package = "com.example.Spring.protos";
+option java_multiple_files=true;
+
+message UserAddRequestEntity{
+  string name = 1;
+  string password = 2;
+  string email = 3;
+}
+
+message UserAddReponseEntity{
+  string msg = 1;
+}
+
+message UserUpdateRequestEntity{
+  string updated_name = 1;
+  string updated_password =2;
+}
+
+message UserUpdateReponseEntity{
+  string  msg =1;
+}
+
+message UserDeleteReponseEntity{
+  string  msg =1;
+}
+
+
+message PersonalDetailsRequestEntity{
+  int32  user_id =1;
+}

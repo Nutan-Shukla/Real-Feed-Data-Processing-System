@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.example.Spring.Project;
+
+option java_package = "com.example.Spring.protos";
+option java_multiple_files=true;
+
+message Element {
+
+  string  id = 1;
+  string  mode = 2;
+  int32 user_id=3;
+  double metal_quantity=4;
+  double balance = 5;
+  double  price = 6;
+  string  metal = 7;
+}
